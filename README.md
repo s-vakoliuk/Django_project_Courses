@@ -1,1 +1,1 @@
-# Django_project_Course
+# Django_project_Courses
