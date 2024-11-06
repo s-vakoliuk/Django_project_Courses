@@ -1,6 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render# Create your views here.
 from django.http import HttpResponse
+from .models import Course
 
-# Create your views here.
+
+
 def index(request):
-    return HttpResponse("Hello from the Shop app")
+    courses=Course.objects.all()
+    return render (request, 'courses.html', {'courses':courses})
